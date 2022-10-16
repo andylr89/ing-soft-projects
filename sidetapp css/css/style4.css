@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../img/work.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+a {
+    top: 75px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navegation */
+.nav-brand {
+    width: 200px;
+    margin-top: 15px;
+    margin-left: 20px;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+}
+
+.nav-menu li {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.nav-menu li a {
+    color: white;
+}
+
+.nav-menu li a:hover {
+    background-color: rgb(51, 51, 51, 0.602);
+    padding: 10px 10px;
+}
+
+.container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.message a {
+    color: white;
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: #F09700;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #fff;
+}
+
+.message button:hover {
+    background-color: #EDEEF0;
+}
+
+.formulario {
+    width: 800px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgb(163, 163, 163, 0.602);
+    text-align: center;
+}
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+ .dni input {
+    position: relative;
+    top:-25px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: -25%;
+}
+
+.nombre input {
+    position: relative;
+    top:-82px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
+.contrasena input {
+    position: relative;
+    top:-485px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: -25%;
+}
+.fecha input[type="date"] {
+    position: relative;
+    top: -99px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: -25%;
+}
+.edad input {
+    position: relative;
+    top: -156px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
+.area input {
+    position: relative;
+    top: -232px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
+.habilidad input {
+    position: relative;
+    top: -255px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: -25%;
+}
+.ciudad select {
+    position: relative;
+    top: -175px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: -25%;
+}
+.direccion input {
+    position: relative;
+    top: -312px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
+.telefono input {
+    position: relative;
+    top: -335px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: -25%;
+}
+.disponibilidad input {
+    position: relative;
+    top: -392px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
+.hv input {
+    position: relative;
+    top: -410px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: -25%;
+}
+
+.calificacion input {
+    position: relative;
+    top: -467px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+     left: 25%;
+    }
+.formulario input[type="button"] {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
+
+.formulario input[type="submit"] {
+    position: relative;
+    top: -565px;
+    width: 35%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+    left: 25%;
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.alert-box {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(255, 119, 119);
+    border-top: 10px solid rgb(255, 37, 37);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    transition: 1s;
+}
