@@ -18,16 +18,18 @@
 
     <!-- Custom styles for this template-->
     <link href="css/menu.css" rel="stylesheet">
+    <link href="css/stile3.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
     <div id="wrapper">
-
+     
+  
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
              <div class="sidebar-card d-none d-lg-flex">
-               
+                 <img class="logo" src="img/Recurso 2.PNG" alt="...">  
              
             </div>
             <hr class="barra">
@@ -36,39 +38,38 @@
             <!-- Nav Item - Pages Collapse Menu -->
             <div class="menu-inicio">
             <li class="nav-item">
-                <a class="nav-link collapsed" href="home.html">                  
+                <a class="nav-link collapsed" href="home.html" target="Iframe_home">                  
                     <span>Inicio</span>
                 </a>            
             </li>
               <hr class="sidebar-divider"> 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="login.html">                
-                    <span>Iniciar Sesion</span>
+                <a class="nav-link collapsed" href="login.html" target="Iframe_home">     
+                  <span>Iniciar Sesion</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">                
+                    data-parent="#accordionSidebar">     
                 </div>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">       
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">                   
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">             
                     <span>Registrase</span>
                 </a>
                   <hr class="sidebar-divider"> 
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">                    
-                        <a class="collapse-item" href="Empleado.html">Empleado </a>
-                        
-                        <a class="collapse-item" href="Empleador.html">Empleador</a>              
+                        <a class="collapse-item" href="Empleado.html"  src="Empleado.html" target="Iframe_home">Empleado </a>
+                        <a class="collapse-item" href="Empleador.html" target="Iframe_home" >Empleador</a>              
                 </div>
             </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">                
+                <a class="nav-link" href="Buscar_oferta.html" target="Iframe_home">                
                     <span>Buscar Oferta</span></a>
             </li>
             </div>
@@ -93,51 +94,24 @@
 
     <!-- Page Wrapper -->
                 <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" style="background-color: #EDEEF0;">
-                     <img class="logo" src="img/Recurso 2.PNG" alt="...">  
+                   
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- Topbar Search -->
-                    <!--<form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                      <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar ..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                    </ul>
-                </nav>
-                <!-- /.container-fluid -->
+        <iframe name="Iframe_home" class="contenido" src="home.html"style="border: none;  position: relative;  width: 100%;top: 552%;height: 1000%;"></iframe>
+    <a class="scroll-to-top rounded" href="#page-top">
             </div>
             <!-- End of Main Content -->
-aCA
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                      
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
+            
         </div>
         <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
+       
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
