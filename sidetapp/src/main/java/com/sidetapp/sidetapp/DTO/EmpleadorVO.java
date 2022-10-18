@@ -6,28 +6,28 @@ public class EmpleadorVO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private Integer nit_empleador;
+    private Integer Dni_empleador;
     private Integer contacto_empleador;
     private Integer calificacion_empleador;
     private String nombre_empleador;
     private String tipo_empleador;
     private String ciudad_empleador;
-    private String categoria_empleador;
+    private String razon_social;
     private String disponibilidad_empleador;
     private String contrasena_empleador;
 
     /*
-     * @return the nit_empleador
+     * @return the Dni_empleador
      **/
-    public Integer getNit_empleador() {
-        return nit_empleador;
+    public Integer getDni_empleador() {
+        return Dni_empleador;
     }
 
     /*
-     * @param nit_empleador the nit_empleador to set
+     * @param Dni_empleador the Dni_empleador to set
      **/
-    public void setNit_empleador(Integer nit_empleador) {
-        this.nit_empleador = nit_empleador;
+    public void setDni_empleador(Integer Dni_empleador) {
+        this.Dni_empleador = Dni_empleador;
     }
 
     /*
@@ -101,17 +101,17 @@ public class EmpleadorVO implements Serializable {
     }
 
     /*
-     * @return the categoria_empleador
+     * @return the razon_social
      **/
-    public String getCategoria_empleador() {
-        return categoria_empleador;
+    public String getRazon_social() {
+        return razon_social;
     }
 
     /*
-     * @param categoria_empleador the categoria_empleador to set
+     * @param razon_social the razon_social to set
      **/
-    public void setCategoria_empleador(String categoria_empleador) {
-        this.categoria_empleador = categoria_empleador;
+    public void setRazon_social(String razon_social) {
+        this.razon_social = razon_social;
     }
 
     /*
@@ -129,14 +129,14 @@ public class EmpleadorVO implements Serializable {
     }
 
     /*
-     * @return the nit_empleador
+     * @return the contrasena_empleador
      **/
     public String getContrasena_empleador() {
         return contrasena_empleador;
     }
 
     /*
-     * @param nit_empleador the nit_empleador to set
+     * @param contrasena_empleador the contrasena_empleador to set
      **/
     public void setContrasena_empleador(String contrasena_empleador) {
         this.contrasena_empleador = contrasena_empleador;

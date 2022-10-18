@@ -2,24 +2,25 @@ package com.sidetapp.sidetapp.DAO;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Connection;
 
-public class Connection {
+public class Connect {
 	
 	static String name_bd = "sidetapp";
 	static String user_bd = "root";
-	static String pass = "";
-	static String url_bd = "jdbc:mysql://localhost:3306/sidetapp" + name_bd;
+	static String pass = "1234";
+	static String url_bd = "jdbc:mysql://localhost:3306/sidetapp";
 	
-	java.sql.Connection connect = null;
+	Connection connection = null;
 	
-	public Connection() {
+	public Connect() {
 		try {
 			
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			connect = DriverManager.getConnection(url_bd, user_bd, pass);
+			connection = DriverManager.getConnection(url_bd, user_bd, pass);
 			
-			if(connect != null) {
+			if(connection != null) {
 				System.out.println("Conexión a base de datos " + name_bd + "Ok\n");
 			}
 			
@@ -33,12 +34,12 @@ public class Connection {
 		
 	}
 	
-	public java.sql.Connection getConnection() {
-		return connect;
+	public Connection getConnection() {
+		return connection;
 	}
 	
 	public void disconnect() {
-		connect = null;
+		connection = null;
 	}
 	
 
