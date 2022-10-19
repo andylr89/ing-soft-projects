@@ -1,4 +1,4 @@
-package com.sideatpp.sidetapp;
+package com.sidetapp.sidetapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

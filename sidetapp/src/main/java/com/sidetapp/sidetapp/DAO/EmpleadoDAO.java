@@ -103,15 +103,6 @@ public class EmpleadoDAO {
         return listaempleado;
         
         
-        
-        
-        
     }
-    
-    
-    
-    
-    
-    
     
 }

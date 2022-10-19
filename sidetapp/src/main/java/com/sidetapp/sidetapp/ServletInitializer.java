@@ -1,4 +1,4 @@
-package com.sideatpp.sidetapp;
+package com.sidetapp.sidetapp;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

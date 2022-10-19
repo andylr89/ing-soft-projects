@@ -1,4 +1,4 @@
-package com.sideatpp.sidetapp;
+package com.sidetapp.sidetapp;
 
 import java.util.Collections;
 import org.springframework.context.annotation.Bean;
@@ -18,7 +18,7 @@ public class SwaggerConfig {
     @Bean
     public Docket apiDocket() {
         return new Docket(DocumentationType.SWAGGER_2).select()
-                .apis(RequestHandlerSelectors.basePackage("com.sideatpp.sidetapp")).paths(PathSelectors.any()).build()
+                .apis(RequestHandlerSelectors.basePackage("com.sidetapp.sidetapp")).paths(PathSelectors.any()).build()
                 .apiInfo(getApiInfo());
     }
 
