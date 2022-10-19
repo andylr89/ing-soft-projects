@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/style3.css">
+<link rel="stylesheet" href="/css/style3.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="shortcut icon" href="img/Recurso 2.PNG" type="image/x-icon" />
@@ -43,8 +43,9 @@
 			</div>
 			<div class="ciudad">
 				<select type="text" name="firstname" placeholder="Ciudad"
-					id="Ciudad">
+					id="Ciudad" default = "value1">
 					<option value="value1">Seleccione Ciudad</option>
+					<option value="value2">Bogotá</option>
 
 				</select>
 			</div>
