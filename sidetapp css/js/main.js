@@ -9,4 +9,9 @@ document.addEventListener('click', e => {
         $signUp.classList.toggle('active')
     }
 });
+ const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
 
