@@ -40,12 +40,12 @@ public class EmpleadoDAO {
 
         } catch (SQLException e) {
             System.out.println("------------------- ERROR --------------");
-            System.out.println("No se pudo insertar el cliente");
+            System.out.println("No se pudo insertar el empleado");
             System.out.println(e.getMessage());
             System.out.println(e.getErrorCode());
         } catch (Exception e) {
             System.out.println("------------------- ERROR --------------");
-            System.out.println("No se pudo insertar el cliente");
+            System.out.println("No se pudo insertar el empleado");
             System.out.println(e.getMessage());
             System.out.println(e.getLocalizedMessage());
         }
@@ -88,13 +88,11 @@ public class EmpleadoDAO {
             link.disconnect();
             
         } catch (SQLException e) {
-            //si hay un error en el sql mostrarlo
             System.out.println("------------------- ERROR --------------");
             System.out.println("No se pudo consultar el cliente");
             System.out.println(e.getMessage());
             System.out.println(e.getErrorCode());
         } catch (Exception e) {
-            //si hay cualquier otro error mostrarlo
             System.out.println("------------------- ERROR --------------");
             System.out.println("No se pudo consultar el cliente");
             System.out.println(e.getMessage());
