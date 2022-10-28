@@ -20,7 +20,7 @@
 </head>
 
 <body>
-	
+
 	<div class="container-form sign-up">
 		<form class="formulario">
 			<h2 class="create-account">Empleado</h2>
@@ -43,7 +43,7 @@
 			</div>
 			<div class="ciudad">
 				<select type="text" name="firstname" placeholder="Ciudad"
-					id="Ciudad" default = "value1">
+					id="Ciudad" default="value1">
 					<option value="value1">Seleccione Ciudad</option>
 					<option value="value2">Bogotá</option>
 

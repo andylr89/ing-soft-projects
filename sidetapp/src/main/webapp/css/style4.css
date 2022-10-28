@@ -27,26 +27,7 @@ a {
 ul {
     list-style: none;
 }
-.barra1{
-    width: 100%;
-}
-.menu iframe{
-width: 100%;
-border: none;
-scroll-behavior: none;
-position: relative;
-top:-38%;
 
-
-}
-
-.contenido iframe{
- width: 100%;
-height: 100%;
-border: none;
-scroll-behavior: none;
-
-}
 /* Navegation */
 .nav-brand {
     width: 200px;
@@ -118,8 +99,6 @@ scroll-behavior: none;
 }
 
 .formulario {
-    position: relative;
-    top: 10%;
     width: 800px;
     padding: 1rem;
     margin: 2rem;
@@ -131,9 +110,10 @@ scroll-behavior: none;
     padding: 2.7rem 0;
     font-size: 1.7rem;
 }
-.tipop select {
+
+ .dni input {
     position: relative;
-    top: -25px ;
+    top:-25px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -147,23 +127,6 @@ scroll-behavior: none;
     font-size: .9rem;
     color: #000;
     left: -25%;
-}
- .dni input {
-    position: relative;
-    top:-82px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: 25%;
 }
 
 .nombre input {
@@ -181,97 +144,11 @@ scroll-behavior: none;
     padding: .2rem 0;
     font-size: .9rem;
     color: #000;
-    left: -25%;
-}
-.direccion input {
-    position: relative;
-    top: -138px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: 25%;
-}
-.telefono input {
-    position: relative;
-    top: -145px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: -25%;
-}
-.ciudad select {
-    position: relative;
-    top: -203px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: 25%;
-}
-
-.nit input {
-    position: relative;
-    top:-210px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: -25%;
-}
-.nombrerl input {
-    position: relative;
-    top:-267px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
     left: 25%;
 }
 .contrasena input {
     position: relative;
-    top:-278px ;
+    top:-485px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -354,6 +231,91 @@ scroll-behavior: none;
     color: #000;
     left: -25%;
 }
+.ciudad select {
+    position: relative;
+    top: -175px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: -25%;
+}
+.direccion input {
+    position: relative;
+    top: -312px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
+.telefono input {
+    position: relative;
+    top: -335px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: -25%;
+}
+.disponibilidad input {
+    position: relative;
+    top: -392px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
+.hv input {
+    position: relative;
+    top: -410px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: -25%;
+}
 
 .calificacion input {
     position: relative;
@@ -388,7 +350,7 @@ scroll-behavior: none;
 
 .formulario input[type="submit"] {
     position: relative;
-    top: -338px;
+    top: -565px;
     width: 35%;
     margin: auto;
     border: solid thin white;

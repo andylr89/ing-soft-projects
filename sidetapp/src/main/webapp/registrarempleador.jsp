@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <!DOCTYPE html>
+<html lang="en">
+<head>  
+    
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/Recurso 2.PNG" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>SidetApp Login</title>
+</head>
+<body> 
+ <!-- <iframe  src="index.html"></iframe>
+ <div class="barra1" >
+      <iframe  class="menu" src="index1.html"></iframe>   
+ </div> --> 
+ 
+    <div class="container-form sign-up">  
+
+    <form class="formulario">
+        <h2 class="create-account"> EMPLEADOR </h2>
+
+         <div class="tipop">
+        <select type="text" name="firstname" placeholder="Ciudad" id="Ciudad">
+            <option value="value1">Seleccione tipo persona</option>
+            <option></option>       
+        </select>
+        <div  class="dni">            
+    <input type="text" name="firstname" placeholder="Identificacion" id="Nit">
+  </div>
+  <div class="nombre">
+  <input type="text" name="firstname"placeholder="Nombre y Apellido" id="Nit"Nombre>
+  </div>
+
+ <div class="direccion">
+        <input type="" name="firstname" placeholder="Dirección" id="Dirección">
+   <div class="telefono">
+        <input type="tel" name="firstname" placeholder="Telefono" id="Telefono">
+   </div>  
+    <div class="ciudad">
+        <select type="text" name="firstname" placeholder="Ciudad" id="Ciudad">
+            <option value="value1">Seleccione Ciudad</option>
+       
+        </select>
+   </div>  
+   <div class="nit">
+        <input type="text" name="firstname"placeholder="Nit razon Social" id="Nit razon Social">
+   </div>
+   <div class="nombrerl">
+    <input type="text" name="firstname"placeholder="Representante legal" id="Nit"Nombre>
+  </div>
+<!--  <div class="calificacion">
+        <select type="text" name="firstname" placeholder="Ciudad" id="Ciudad">
+            <option value="value1">Seleccione Ciudad</option>
+       
+        </select>
+    </div>   --> 
+     <div class="contrasena">
+       <input type="password" name="pass" placeholder="Contraseña" id="Contraseña">
+   </div>
+    <div>
+        <input type="submit" value="Enviar">    
+    </div>     
+</form>
+ 
+</div>     
+    <script src="js/main.js"></script>
+</body>
+</html>
