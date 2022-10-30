@@ -1,16 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/css/style3.css">
+<link rel="stylesheet" href="css/style4.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="shortcut icon" href="img/Recurso 2.PNG" type="image/x-icon" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" href="img/Recurso2.png" type="image/x-icon" />
 <link
 	href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
 	rel="stylesheet">
@@ -18,13 +17,12 @@
 	rel='stylesheet'>
 <title>Registrar Empleado</title>
 </head>
-
 <body>
-
+	<!-- <iframe class="menu1" src="index.html"></iframe>  
+  <iframe  class="menu" src="index1.html"></iframe>-->
 	<div class="container-form sign-up">
 		<form class="formulario">
 			<h2 class="create-account">Empleado</h2>
-
 			<div class="dni">
 				<input type="text" name="firstname" placeholder="Identificacion "
 					id="Dni">
@@ -35,23 +33,21 @@
 			</div>
 			<div class="fecha">
 				<input type="date" name="fechaesperada"
-					placeholder=" Feha de nacimiento" id=" Feha_de_nacimiento">
+					placeholder=" Feha de nacimiento" id=" Feha de nacimiento">
 			</div>
-			<div class="apellido">
-				<input type="text" name="lastname" placeholder="Apellido"
-					id="Apellido">
+			<div class="edad">
+				<input type="text" name="firstname" placeholder="Edad" id="Edad">
 			</div>
 			<div class="ciudad">
 				<select type="text" name="firstname" placeholder="Ciudad"
-					id="Ciudad" default="value1">
+					id="Ciudad">
 					<option value="value1">Seleccione Ciudad</option>
-					<option value="value2">Bogotá</option>
 
 				</select>
 			</div>
 			<div class="area">
 				<input type="text" name="firstname"
-					placeholder="Area de conocimiento" id="Area_de_conocimiento">
+					placeholder="Area de conocimiento" id="Area de conocimiento">
 			</div>
 			<div class="habilidad">
 				<input type="text" name="firstname" placeholder="Habilidad"
@@ -59,7 +55,7 @@
 
 			</div>
 			<div class="direccion">
-				<input type="" name="firstname" placeholder="Dirección"
+				<input type="text" name="firstname" placeholder="Dirección"
 					id="Dirección">
 			</div>
 			<div class="telefono">
@@ -71,8 +67,8 @@
 					id="Disponibilidad">
 			</div>
 			<div class="hv">
-				<input type="text" name="archivosubido"
-					placeholder="Selección hoja de vida" id="Selección_hoja_de_vida">
+				<input type="file" name="archivosubido"
+					placeholder=" Selección hoja de vida" id=" Selección hoja de vida">
 			</div>
 			<div class="calificacion">
 				<input type="text" name="lastname" placeholder="Calificación"
@@ -83,16 +79,18 @@
 					id="Contraseña">
 			</div>
 			<div>
-				<input type="submit" value="Enviar" onclick="enviar()">
+				<input type="submit" value="Enviar">
 			</div>
 		</form>
 	</div>
+	<script src="js/main.js"></script>
+
+
 	<script>
 		function enviar() {
 			var x = document.getElementById("Dni").value;
 			var request = new XMLHttpRequest();
 			var match = false;
-
 			request.open('GET', 'http://localhost:8080/consultarempleado',
 					false);
 			request.send(null);
@@ -100,7 +98,6 @@
 			if (request.status == 200)
 				empleado = JSON.parse(request.responseText);
 			console.log(JSON.parse(request.responseText));
-
 			for (i = 0; i < empleado.lenght; i++) {
 				console.log(empleado[i].DNI);
 				if (empleado[i].DNI === x) {
@@ -110,10 +107,8 @@
 				}
 			}
 			console.log(match);
-
 			if (match == false) {
 				var newEmp = new NewEmp();
-
 				newEmp.append("DNI", document.getElementById("DNI").value);
 				newEmp.append("password",
 						document.getElementById("Contraseña").value);
@@ -140,10 +135,8 @@
 						.getElementById("Seleccion_hoja_de_vida").value);
 				newEmp.append("calificacion_usu", document
 						.getElementById("Calificacion").value);
-
 				var nreq = new XMLHttpRequest();
 				nreq.open("POST", "http://localhost:8080/registrarempleado");
-
 				var reply = document.getElementById("error");
 				reply.classList.add("visually-hidden");
 				var reply2 = document.getElementById("correcto");
@@ -160,7 +153,6 @@
 				document.getElementById("Telefono").value = "";
 				document.getElementById("Disponibilidad").value = "";
 				document.getElementById("Calificacion").value = "";
-
 			} else {
 				var reply = document.getElementById("error");
 				reply.classList.remove("visually-hidden");
@@ -178,7 +170,6 @@
 				document.getElementById("Telefono").value = "";
 				document.getElementById("Disponibilidad").value = "";
 				document.getElementById("Calificacion").value = "";
-
 			}
 		}
 	</script>

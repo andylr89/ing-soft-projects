@@ -130,6 +130,7 @@ scroll-behavior: none;
 .create-account {
     padding: 2.7rem 0;
     font-size: 1.7rem;
+    margin-bottom: 50px;
 }
 .tipop select {
     position: relative;
@@ -148,6 +149,11 @@ scroll-behavior: none;
     color: #000;
     left: -25%;
 }
+
+tipop {
+	margin-top: 50px;
+}
+
  .dni input {
     position: relative;
     top:-82px ;
@@ -242,6 +248,7 @@ scroll-behavior: none;
     display: block;
     margin: auto;
     margin-bottom: 2rem;
+     margin-top: 2rem;
     background-color: transparent;
     border: none;
     border-bottom: white thin solid;
