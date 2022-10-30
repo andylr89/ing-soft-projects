@@ -178,9 +178,9 @@ ul {
     padding: .2rem 0;
     font-size: .9rem;
     color: #000;
-    left: 25%;
+    left: -25%;
 }
-.apellido input {
+.edad input {
     position: relative;
     top: -156px ;
     width: 35%;
@@ -195,7 +195,7 @@ ul {
     padding: .2rem 0;
     font-size: .9rem;
     color: #000;
-    left: -25%;
+    left: 25%;
 }
 .area input {
     position: relative;
