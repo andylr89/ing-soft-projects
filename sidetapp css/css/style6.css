@@ -14,13 +14,47 @@ body {
     background-position: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color: #000;
 }
 
-
-.contrasenan input {
+.perfil  {
     position: relative;
-    top:70px ;
+    top:-105px ;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: 1.9rem;
+    color: #000;
+    left:-83px;
+
+}
+.identificacion  {
+    position: relative;
+    top:-124px ;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: left;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left:-83px;
+
+}
+.nombre  {
+    position: relative;
+    top:-216px ;
     width: 70%;
     display: block;
     margin: auto;
@@ -33,11 +67,28 @@ body {
     padding: .2rem 0;
     font-size: .9rem;
     color: #000;
-
+    left:83px;
 }
-.confirmarcontra input {
+.fecha  {
     position: relative;
-    top:70px ;
+    top:-235px ;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: left;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left:-83px;
+}
+.ciudad  {
+    position: relative;
+    top:-326px ;
     width: 70%;
     display: block;
     margin: auto;
@@ -50,47 +101,52 @@ body {
     padding: .2rem 0;
     font-size: .9rem;
     color: #000;
-
+    left:83px;
 }
-.formulario input[type="button"] {
-    width: 60%;
-    margin: auto;
-    border: solid thin white;
-    padding: .7rem;
-    border-radius: 2rem;
-    background-color: white;
-    font-weight: 600;
-    margin-top: 3rem;
-    font-size: .8rem;
-    cursor: pointer;
-    color: #222;
-}
-
-.formulario input[type="submit"] {
+.direccion  {
     position: relative;
-    top: 25px;
+    top:-350px ;
     width: 70%;
+    display: block;
     margin: auto;
-    border: solid thin white;
-    padding: .7rem;
-    border-radius: 2rem;
-    background-color: white;
-    font-weight: 600;
-    margin-top: 3rem;
-    font-size: .8rem;
-    cursor: pointer;
-    color: #222;
-
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: left;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left:-83px;
 }
+.telefono  {
+    position: relative;
+    top:-441px ;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left:83px;
+}
+
+
 
 .padding {
-    padding: 3rem !important
-}
+    padding: 3rem !important;
+    position: absolute;
+    left: 4%;
+    top:-45px;
 
-.user-card-full {
-    overflow: hidden;
 }
-
 .card {
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
@@ -100,11 +156,11 @@ body {
 }
 
 .m-r-0 {
-    margin-right: 0px;
+    margin-right: -17px;
 }
 
 .m-l-0 {
-    margin-left: 0px;
+    margin-left: 170px;
 }
 
 .user-card-full .user-profile {
@@ -113,7 +169,7 @@ body {
 
 .bg-c-lite-green {
         background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
-    background: linear-gradient(to right, #ee5a6f, #f29263);
+    background: rgb(163, 163, 163, 0.602);
 }
 
 .user-profile {
@@ -125,9 +181,15 @@ body {
 }
 
 .m-b-25 {
-    margin-bottom: 25px;
+    margin-bottom: 65px;
 }
-
+.col-sm-8 {
+position:relative;
+left:100%;
+width:160%;
+height:450px;
+top:-415px;
+}
 .img-radius {
     border-radius: 5px;
 }
@@ -149,7 +211,7 @@ p {
 }
 
 .card-block {
-    padding: 1.25rem;
+    padding: 5.2rem;
 }
 
 .b-b-default {
@@ -173,7 +235,7 @@ p {
 }
 
 .text-muted {
-    color: #919aa3 !important;
+    color: #000 !important;
 }
 
 .b-b-default {
