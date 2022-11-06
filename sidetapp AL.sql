@@ -1,1 +1,1 @@
-SELECT * FROM sidetapp.empleador;
+SELECT * FROM EMPLEADO

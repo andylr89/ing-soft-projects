@@ -21,6 +21,7 @@ public class EmpleadoDAO {
             String sent = "INSERT INTO empleado VALUES("
                     + empleado.getDni_empleado() + "," + "'"
                     + empleado.getContrasena_empleado() + "'," + "'"
+                    + empleado.getCorreo_empleado() + "'," + "'"
                     + empleado.getNombre_empleado() + "'," + "'"
                     + empleado.getApellido_empleado() + "'," + "'"
                     + empleado.getFecha_nacimiento_empleado() + "'," + "'"
@@ -29,22 +30,24 @@ public class EmpleadoDAO {
                     + empleado.getCiudad_empleado() + "'," + "'"
                     + empleado.getDireccion_empleado() + "'," + "'"
                     + empleado.getContacto_empleado() + "'," + "'"
-                    + empleado.getDisponibilidad_empleado() + "',"
+                    + empleado.getDisponibilidad_empleado() + "'," + "'"
+                    + empleado.getHoja_vida() + "',"
                     + empleado.getCalificacion_empleado()
                     + ");";
-
+            System.out.println(sent);
             stmt.executeUpdate(sent);
             System.out.println("Registrado " + sent);
             stmt.close();
             link.disconnect();
 
         } catch (SQLException e) {
-            System.out.println("------------------- ERROR --------------");
+            System.out.println("------------------- ERROR ----------------------");
             System.out.println("No se pudo insertar el empleado");
             System.out.println(e.getMessage());
             System.out.println(e.getErrorCode());
+            e.printStackTrace();
         } catch (Exception e) {
-            System.out.println("------------------- ERROR --------------");
+            System.out.println("------------------- ERROR ----------------------");
             System.out.println("No se pudo insertar el empleado");
             System.out.println(e.getMessage());
             System.out.println(e.getLocalizedMessage());
@@ -77,6 +80,7 @@ public class EmpleadoDAO {
                 Empleado.setDireccion_empleado(res.getString("direccion_usu"));
                 Empleado.setContacto_empleado(Integer.parseInt(res.getString("telefono_usu")));
                 Empleado.setDisponibilidad_empleado(res.getString("disponibilidad_usu"));
+                Empleado.setHoja_vida(res.getString("hoja_vida"));
                 Empleado.setCalificacion_empleado(Integer.parseInt(res.getString("calificacion_usu")));
                 
                 listaempleado.add(Empleado);

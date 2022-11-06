@@ -18,6 +18,8 @@ public class EmpleadoVO implements Serializable {
     private String disponibilidad_empleado;
     private String contrasena_empleado;
     private String direccion_empleado;
+    private String hoja_vida;
+    private String correo_empleado;
 
     public Integer getDni_empleado() {
         return dni_empleado;
@@ -114,5 +116,21 @@ public class EmpleadoVO implements Serializable {
     public void setDireccion_empleado(String direccion_empleado) {
         this.direccion_empleado = direccion_empleado;
     }
+    
+    public String getHoja_vida() {
+        return hoja_vida;
+    }
 
+    public void setHoja_vida(String hoja_vida) {
+        this.hoja_vida = hoja_vida;
+    }
+
+    public String getCorreo_empleado() {
+        return correo_empleado;
+    }
+
+    public void setCorreo_empleado(String correo_empleado) {
+        this.correo_empleado = correo_empleado;
+    }
+    
 }

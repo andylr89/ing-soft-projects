@@ -21,7 +21,7 @@ public class Connect {
 			connection = DriverManager.getConnection(url_bd, user_bd, pass);
 			
 			if(connection != null) {
-				System.out.println("Conexión a base de datos " + name_bd + "Ok\n");
+				System.out.println("Conexión a base de datos " + name_bd + " Ok\n");
 			}
 			
 		} catch (SQLException e) {
