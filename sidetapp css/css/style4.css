@@ -146,9 +146,9 @@ ul {
     color: #000;
     left: 25%;
 }
-.contrasena input {
+.apellido input {
     position: relative;
-    top:-485px ;
+    top: -95px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -165,7 +165,7 @@ ul {
 }
 .fecha input[type="date"] {
     position: relative;
-    top: -99px ;
+    top: -155px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -180,43 +180,9 @@ ul {
     color: #000;
     left: 25%;
 }
-.apellido input {
+.correo input {
     position: relative;
-    top: -156px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: -25%;
-}
-.area input {
-    position: relative;
-    top: -232px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: 25%;
-}
-.habilidad input {
-    position: relative;
-    top: -255px ;
+    top:-170px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -233,7 +199,24 @@ ul {
 }
 .ciudad select {
     position: relative;
-    top: -175px ;
+    top: -229px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
+.area input {
+    position: relative;
+    top: -242px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -247,6 +230,23 @@ ul {
     font-size: .9rem;
     color: #000;
     left: -25%;
+}
+.habilidad input {
+    position: relative;
+    top: -299px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
 }
 .direccion input {
     position: relative;
@@ -263,28 +263,11 @@ ul {
     padding: .2rem 0;
     font-size: .9rem;
     color: #000;
-    left: 25%;
+    left: -25%;
 }
 .telefono input {
     position: relative;
-    top: -335px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: -25%;
-}
-.disponibilidad input {
-    position: relative;
-    top: -392px ;
+    top: -369px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -299,9 +282,9 @@ ul {
     color: #000;
     left: 25%;
 }
-.hv input {
+.disponibilidad input {
     position: relative;
-    top: -410px ;
+    top: -385px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -316,10 +299,9 @@ ul {
     color: #000;
     left: -25%;
 }
-
-.calificacion input {
+.hv input {
     position: relative;
-    top: -467px ;
+    top: -447px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -332,8 +314,42 @@ ul {
     padding: .2rem 0;
     font-size: .9rem;
     color: #000;
-     left: 25%;
+    left: 25%;
+}
+.calificacion input {
+    position: relative;
+    top: -464px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+     left: -25%;
     }
+.contrasena input {
+    position: relative;
+    top:-521px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
 .formulario input[type="button"] {
     width: 60%;
     margin: auto;
@@ -362,7 +378,7 @@ ul {
     font-size: .8rem;
     cursor: pointer;
     color: #222;
-    left: 25%;
+    left: 2%;
 }
 
 .sign-in {
