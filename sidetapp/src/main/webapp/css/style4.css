@@ -1,3 +1,94 @@
+/*Inicio Sidebar*/
+.sidebar{
+    position: relative;
+    left: -250px;
+    width: 250px;
+    height: 290px;
+    background: rgb(163, 163, 163, 0.602);
+    transition: all .5s ease;
+    margin-top: 80px;
+    margin-bottom: 200px;
+    align-items: flex-start;
+    
+}
+
+.sidebar img {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    top: 5px;
+  }
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-top: 1px solid #F09700;
+    transition: .4s;
+}
+
+ul li:hover a{
+    padding-left: 10px;
+}
+
+.sidebar #check{
+    display: none;
+}
+
+.hide-sidebar #check{
+    display: none;
+}
+
+label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.hide-sidebar label #cancel2{
+    position: absolute;
+    left: 10px;
+    top: 130px;
+    font-size: 35px;
+    color: #F09700;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: 195px;
+    font-size: 30px;
+    color: #F09700;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check2:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #cancel2{
+    left: 195px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hide-sidebar #check:checked ~ label #cancel2{
+    left: 195px;
+    display: none;
+}
+/*Fin Sidebar*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +97,14 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-image: url(../img/work.jpg);
     background-position: cover;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1600px;
     color: #fff;
 }
 
@@ -28,31 +119,6 @@ ul {
     list-style: none;
 }
 
-/* Navegation */
-.nav-brand {
-    width: 200px;
-    margin-top: 15px;
-    margin-left: 20px;
-    position: absolute;
-    display: block;
-    top: 0;
-    bottom: 0;
-}
-
-.nav-menu li {
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.nav-menu li a {
-    color: white;
-}
-
-.nav-menu li a:hover {
-    background-color: rgb(51, 51, 51, 0.602);
-    padding: 10px 10px;
-}
-
 .container-form {
     width: 90%;
     height: 90vh;
@@ -61,49 +127,13 @@ ul {
     transition: all .5s ease-out;
 }
 
-.welcome-back {
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.message {
-    padding: 1rem;
-}
-
-.message h2 {
-    font-size: 1.7rem;
-    padding: 1rem 0;
-}
-
-.message a {
-    color: white;
-}
-
-.message button {
-    padding: 1rem;
-    font-weight: 400;
-    background-color: #F09700;
-    border-radius: 2rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: .9rem;
-    margin-top: 2rem;
-    transition: all .3s ease-in;
-    color: #fff;
-}
-
-.message button:hover {
-    background-color: #EDEEF0;
-}
-
 .formulario {
     width: 800px;
     padding: 1rem;
     margin: 2rem;
     background-color: rgb(163, 163, 163, 0.602);
     text-align: center;
+    margin-right: 50px;
 }
 
 .create-account {
@@ -146,9 +176,9 @@ ul {
     color: #000;
     left: 25%;
 }
-.contrasena input {
+.apellido input {
     position: relative;
-    top:-485px ;
+    top: -95px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -165,24 +195,7 @@ ul {
 }
 .fecha input[type="date"] {
     position: relative;
-    top: -99px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: -25%;
-}
-.edad input {
-    position: relative;
-    top: -156px ;
+    top: -155px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -197,26 +210,9 @@ ul {
     color: #000;
     left: 25%;
 }
-.area input {
+.correo input {
     position: relative;
-    top: -232px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: 25%;
-}
-.habilidad input {
-    position: relative;
-    top: -255px ;
+    top:-170px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -233,7 +229,24 @@ ul {
 }
 .ciudad select {
     position: relative;
-    top: -175px ;
+    top: -229px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
+.area input {
+    position: relative;
+    top: -242px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -247,6 +260,23 @@ ul {
     font-size: .9rem;
     color: #000;
     left: -25%;
+}
+.habilidad input {
+    position: relative;
+    top: -299px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
 }
 .direccion input {
     position: relative;
@@ -263,28 +293,11 @@ ul {
     padding: .2rem 0;
     font-size: .9rem;
     color: #000;
-    left: 25%;
+    left: -25%;
 }
 .telefono input {
     position: relative;
-    top: -335px ;
-    width: 35%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: #000;
-    left: -25%;
-}
-.disponibilidad input {
-    position: relative;
-    top: -392px ;
+    top: -369px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -299,9 +312,9 @@ ul {
     color: #000;
     left: 25%;
 }
-.hv input {
+.disponibilidad input {
     position: relative;
-    top: -410px ;
+    top: -385px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -316,10 +329,9 @@ ul {
     color: #000;
     left: -25%;
 }
-
-.calificacion input {
+.hv input {
     position: relative;
-    top: -467px ;
+    top: -447px ;
     width: 35%;
     display: block;
     margin: auto;
@@ -332,8 +344,42 @@ ul {
     padding: .2rem 0;
     font-size: .9rem;
     color: #000;
-     left: 25%;
+    left: 25%;
+}
+.calificacion input {
+    position: relative;
+    top: -464px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+     left: -25%;
     }
+.contrasena input {
+    position: relative;
+    top:-521px ;
+    width: 35%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    left: 25%;
+}
 .formulario input[type="button"] {
     width: 60%;
     margin: auto;
@@ -362,7 +408,7 @@ ul {
     font-size: .8rem;
     cursor: pointer;
     color: #222;
-    left: 25%;
+    left: 2%;
 }
 
 .sign-in {

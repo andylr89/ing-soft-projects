@@ -1452,6 +1452,22 @@ figure.effect-julia:hover p {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+.content-pad input[type="submit"] {
+    position: relative;
+    top: 10px;
+    width: 25%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+    left: 70%;
+}
 
 .gallery-slider .slick-dots li.slick-active, 
 .gallery-slider .slick-dots li:hover {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/Recurso 2.PNG" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/Recurso2.png" type="image/x-icon" />
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -14,7 +14,7 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="newStyles.css">
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;1,100&display=swap"
         rel="stylesheet">
@@ -22,7 +22,30 @@
     <title>SidetApp Home</title>
 </head>
 
-<body>   
+<body>
+    <div class="hide-sidebar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="cancel2"></i>
+        </label>
+
+        <div class="sidebar">
+            <ul>
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fa-regular fa-circle-xmark" id="cancel"></i>
+                </label>
+                <li><img src="sidetapp_css/img/Recurso2.png" alt="Logo sidetapp" id="logo"></li>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="empleado.html">Registrar Empleado</a></li>
+                <li><a href="empleador.html">Registrar Empleador</a></li>
+                <li><a href="buscar_oferta.html">Buscar Oferta</a></li>
+            </ul>
+        </div>
+    </div>
+
+
     <div class="container">
         <!--Showcase-->
         <header class="showcase">
@@ -34,28 +57,28 @@
         <!--News Cards-->
         <div class="news-cards">
             <div>
-                <img src="img/home-socialmedia.jpg" alt="">
+                <img src="sidetapp_css/img/home-socialmedia.jpg" alt="">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt provident libero
                     voluptatum modi numquam ducimus nobis dicta laboriosam officia.</p>
                 <a href="#">Más info <i class="fa-solid fa-plus"></i></a>
             </div>
             <div>
-                <img src="img/home-learning.jpg" alt="">
+                <img src="sidetapp_css/img/home-learning.jpg" alt="">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt provident libero
                     voluptatum modi numquam ducimus nobis dicta laboriosam officia.</p>
                 <a href="#">Más info <i class="fa-solid fa-plus"></i></a>
             </div>
             <div>
-                <img src="img/home-repairs.jpg" alt="">
+                <img src="sidetapp_css/img/home-repairs.jpg" alt="">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt provident libero
                     voluptatum modi numquam ducimus nobis dicta laboriosam officia.</p>
                 <a href="#">Más info <i class="fa-solid fa-plus"></i></a>
             </div>
             <div>
-                <img src="img/home-freelance.jpg" alt="">
+                <img src="sidetapp_css/img/home-freelance.jpg" alt="">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt provident libero
                     voluptatum modi numquam ducimus nobis dicta laboriosam officia.</p>
@@ -63,7 +86,7 @@
             </div>
         </div>
 
-        <section class="cards-banner-one">
+        <div class="cards-banner-one">
             <div class="content">
                 <div class="in-cards-banner">
                     <h2>Lorem, ipsum dolor.</h2>
@@ -72,7 +95,7 @@
                     <a href="#" class="btn">Más info <i class="fa-solid fa-plus"></i></a>
                 </div>
             </div>
-        </section>
+        </div>
 
 
         <section class="social">
@@ -91,8 +114,7 @@
                     <i class='bx bxl-twitter'></i>
                 </div>
             </div>
-    </div>  
-      <script src="js/main.js"></script>
+    </div>
 </body>
 
 </html>

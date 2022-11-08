@@ -1,120 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-     <link rel="shortcut icon" href="img/Recurso2.png" type="image/x-icon"/>
-    <title>SidetApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Recurso2.png" type="image/x-icon" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/newStyles.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;1,100&display=swap"
         rel="stylesheet">
 
-    <!-- Custom styles for this template-->
-    <link href="css/menu.css" rel="stylesheet">
-
+    <title>SidetApp Home</title>
 </head>
 
-<body id="page-top">
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <div class="sidebar-card d-none d-lg-flex">
-                 <img class="logo" src="img/Recurso2.png" alt="...">
+<body>
+    <div class="hide-sidebar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="cancel2"></i>
+        </label>
+
+        <div class="sidebar">
+            <ul>
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fa-regular fa-circle-xmark" id="cancel"></i>
+                </label>
+                <li><img src="/img/Recurso2.png" alt="Logo sidetapp" id="logo"></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.jsp">Iniciar Sesión</a></li>
+                <li><a href="empleado.jsp">Registrar Empleado</a></li>
+                <li><a href="empleador.jsp">Registrar Empleador</a></li>
+                <li><a href="oferta.jsp">Buscar Oferta</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!--Showcase-->
+        <header class="showcase">
+            <h2>Encuentra lo que estás buscando</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, neque.</p>
+            <a href="#" class="btn">Infórmate más <i class="fa-solid fa-briefcase"></i></a>
+        </header>
+
+        <!--News Cards-->
+        <div class="news-cards">
+            <div>
+                <img src="/img/home-socialmedia.jpg" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt provident libero
+                    voluptatum modi numquam ducimus nobis dicta laboriosam officia.</p>
+                <a href="#">Más info <i class="fa-solid fa-plus"></i></a>
             </div>
-            <hr class="barra">
-            <!-- Divider -->
-            <!-- Nav Item - Pages Collapse Menu -->
-            <div class="menu-inicio">
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="home.jsp" target="Iframe_home">
-                    <span>Inicio</span>
-                </a>
-            </li>
-              <hr class="sidebar-divider">
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="login.jsp" target="Iframe_home">
-                  <span>Iniciar Sesión</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
+            <div>
+                <img src="/img/home-learning.jpg" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt provident libero
+                    voluptatum modi numquam ducimus nobis dicta laboriosam officia.</p>
+                <a href="#">Más info <i class="fa-solid fa-plus"></i></a>
+            </div>
+            <div>
+                <img src="/img/home-repairs.jpg" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt provident libero
+                    voluptatum modi numquam ducimus nobis dicta laboriosam officia.</p>
+                <a href="#">Más info <i class="fa-solid fa-plus"></i></a>
+            </div>
+            <div>
+                <img src="/img/home-freelance.jpg" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt provident libero
+                    voluptatum modi numquam ducimus nobis dicta laboriosam officia.</p>
+                <a href="#">Más info <i class="fa-solid fa-plus"></i></a>
+            </div>
+        </div>
+
+        <div class="cards-banner-one">
+            <div class="content">
+                <div class="in-cards-banner">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae quae dolorem nostrum,
+                        mollitia debitis.</p>
+                    <a href="#" class="btn">Más info <i class="fa-solid fa-plus"></i></a>
                 </div>
-            </li>
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="registroempleado.jsp" target="Iframe_home">
-                        <span>Registrar <br>Empleado</span>
-                    </a>
-                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                         data-parent="#accordionSidebar">
-                    </div>
-                </li>
-                <hr class="sidebar-divider">
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="registrarempleador.jsp" target="Iframe_home">
-                        <span>Registrar <br>Empleador</span>
-                    </a>
-                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                         data-parent="#accordionSidebar">
-                    </div>
-                </li>
-                <hr class="sidebar-divider">
-            <li class="nav-item">
-                <a class="nav-link" href="Buscar_oferta.jsp" target="Iframe_home">
-                    <span>Buscar  Oferta</span></a>
-            </li>
             </div>
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-        </ul>
-        <!-- End of Sidebar -->
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
+        </div>
 
-            <!-- Main Content -->
-            <div id="content">
-                <!-- Topbar -->
 
-    <!-- Page Wrapper -->
-                <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" style="background-color: #EDEEF0;">
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-
-        <iframe name="Iframe_home" class="contenido" src="home.jsp"style="border: none;  position: relative;  width: 100%;top: 552%;height: 1000%;"></iframe>
-    <a class="scroll-to-top rounded" href="#page-top"> </a>
-    </nav>
-            </div>
-            <!-- End of Main Content -->
+        <section class="social">
+            <p>Siguenos en nuestras redes</p>
+            <div class="social-media">
+                <div class="border-icon">
+                    <a href="https://instagram.com"><i class='bx bxl-instagram'></i></a>
+                </div>
+                <div class="border-icon">
+                    <a href="https://facebook.com"><i class="bx bxl-facebook-circle"></i></a>
+                </div>
+                <div class="border-icon">
+                    <a href="https://linkedin.com"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-twitter'></i>
+                </div>
             </div>
     </div>
-            <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-      <script src="js/main.js"></script>
-
 </body>
 
 </html>

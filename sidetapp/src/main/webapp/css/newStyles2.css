@@ -1,0 +1,215 @@
+/*Inicio Sidebar*/
+.sidebar{
+    position: relative;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgb(163, 163, 163, 0.602);
+    transition: all .5s ease;
+    margin-top: 0;
+    align-items: flex-start;
+    
+}
+
+.sidebar img {
+    height: 50px;
+    width: auto;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    top: 5px;
+  }
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-top: 1px solid #F09700;
+    transition: .4s;
+}
+
+ul li:hover a{
+    padding-left: 10px;
+}
+
+.sidebar #check{
+    display: none;
+}
+
+.hide-sidebar #check{
+    display: none;
+}
+
+label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.hide-sidebar label #cancel2{
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    font-size: 35px;
+    color: #F09700;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: 195px;
+    font-size: 30px;
+    color: #F09700;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check2:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #cancel2{
+    left: 195px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hide-sidebar #check:checked ~ label #cancel2{
+    left: 195px;
+    display: none;
+}
+/*Fin Sidebar*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/work.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.formulario {
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgb(163, 163, 163, 0.602);
+    text-align: center;
+}
+
+.formulario h2{
+	margin-top: 60px;
+}
+
+.formulario p a {
+    top: 75px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.formulario input {
+    position: relative;
+    top:55px ;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: medium;
+    border-bottom: 1px solid #F09700;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #000;
+    align-content: center;
+    align-items: center;
+}
+
+.formulario input[type="submit"] {
+    position: relative;
+    top: 50px;
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: #F09700;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
+
+.container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.border-icon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin #F09700;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.border-icon:hover {
+    background-color: #4a4aee;
+    cursor: pointer;
+}
+

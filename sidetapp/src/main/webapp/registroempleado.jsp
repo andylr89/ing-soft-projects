@@ -1,93 +1,79 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style4.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="shortcut icon" href="img/Recurso2.png" type="image/x-icon" />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-<title>Registrar Empleado</title>
+<head>  
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/Recurso2.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>SidetApp Login</title>
 </head>
 <body>
-
-<!-- 	<div id="error" class="alert alert-danger visually-hidden" role="alert">Error -->
-<!-- 		al crear el usuario, verifique que no exista un usuario conel ID ingresado</div> -->
-
-<!-- 	<div id="correcto" class="alert alert-success visually-hidden" -->
-<!-- 		role="alert">Usuario creado con exito</div> -->
-		
-	<!-- <iframe class="menu1" src="index.html"></iframe>  
-  <iframe  class="menu" src="index1.html"></iframe>-->
-  
-	<div class="container-form sign-up">
-		<form class="formulario" action="http://localhost:8080/registrarempleado" method="POST">
-			<h2 class="create-account">Empleado</h2>
-			<div class="dni">
-				<input type="text" name="id" placeholder="Identificacion"
-					id="idNumber">
-			</div>
-			<div class="nombre">
-				<input type="text" name="name" placeholder="Nombre" id="nombre">
-			</div>
-			<div class="fecha">
-				<input type="date" name="fechaNac"
-					placeholder=" Feha de nacimiento" id="fechaNacimiento">
-			</div>
-			<div class="nombre">
-				<input type="text" name="lastName" placeholder="Apellido"
-					id="apellido">
-			</div>
-			<div class="ciudad">
-				<select id="ciudad">
-					<option value="">Seleccione Ciudad</option>
-					<option value="bogota">Bogot·</option>
-					<option value="medellin">MedellÌn</option>
-				</select>
-			</div>
-			<div class="area">
-				<input type="text" name="firstname"
-					placeholder="Area de conocimiento" id="areaConoci">
-					<input type="email" name="email" placeholder="Correo Electronico"
-					id="email">	
-			</div>
-			<div class="habilidad">
-				<input type="text" name="ability" placeholder="Habilidad"
-					id="habilidad">
-
-			</div>
-			<div class="direccion">
-				<input type="text" name="address" placeholder="DirecciÛn"
-					id="direccion">
-			</div>
-			<div class="telefono">
-				<input type="tel" name="telephone" placeholder="Telefono"
-					id="telefono">
-			</div>
-			<div class="disponibilidad">
-				<input type="text" name="availability" placeholder="Disponibilidad"
-					id="disponibilidad">
-			</div>
-			<div class="hv">
-				<input type="text" name="cv" placeholder=" SelecciÛn hoja de vida"
-					id="hojaVida">
-			</div>
-			<div class="calificacion">
-				<input type="text" name="score" placeholder="CalificaciÛn"
-					id="calificacion">
-			</div>
-			<div class="contrasena">
-				<input type="password" name="pass" placeholder="ContraseÒa"
-					id="passw">
-			</div>
-			<div>
-				<input type="submit" value="Enviar" onclick="enviar()">
-			</div>
-		</form>
-	</div>
+    <div class="container-form sign-up">      
+        <form class="formulario" action=‚Äùhttp://localhost:8080/registrarempleado‚Äù method="POST" enctype=‚Äùmultipart/form-data‚Äù>
+            <h2 class="create-account">
+                Empleado
+            </h2>
+             <div  class="dni">
+                <input type="text"   name="firstname" placeholder="Identificacion" id="idNumber">
+            </div>
+            <div class="nombre">
+                <input type="text" name="firstname"placeholder="Nombre" id="nombre">
+            </div>
+            <div class="apellido">
+                <input type="text" name="firstname"placeholder="Apellido" id="apellido">
+            </div>
+            <div class="fecha">
+                <input type="date" name="fechaesperada" placeholder="Fecha de nacimiento" id="fechaNacimiento">
+            </div>
+            <div class="correo">
+                <input type="text" name="firstname" placeholder="Correo" id="email">
+            </div>
+            <div class="ciudad">
+                <select name="firstname" id="ciudad">
+                <option value="value1">
+                    Seleccione Ciudad
+                </option>
+                <option value="value2">
+                    Bogot√°
+                </option>
+                <option value="value3">
+                    Medell√≠n
+                </option>
+                </select>
+            </div>
+            <div class="area">
+                <input type="text" name="firstname" placeholder="Area de conocimiento" id="areaConoci">
+            </div>
+            <div class="habilidad">
+                <input  type="text" name="firstname"placeholder="Habilidad" id="habilidad" >
+            </div>
+            <div class="direccion">
+                <input type="text" name="firstname" placeholder="Direcci√≥n" id="direccion">
+            </div >
+            <div class="telefono">
+                <input type="tel" name="firstname" placeholder="Telefono" id="telefono">
+            </div>
+            <div class="disponibilidad">
+                <input type="text" name="firstname" placeholder="Disponibilidad" id="disponibilidad">
+            </div>
+            <div class="hv">
+                <input type="text" name="archivosubido" placeholder="Selecci√≥n hoja de vida" id="hojaVida">
+            </div>
+            <div class="calificacion">
+                <input type="text" name="lastname"placeholder="Calificaci√≥n" id="calificacion">
+            </div>
+            <div class="contrasena">
+                <input type="password" name="pass" placeholder="Contrase√±a" id="passw">
+            </div>
+            <div>
+                <input type="submit" value="Enviar" onclick = "enviar()">
+            </div>
+         </form>
+    </div>
 
 	<script type="text/javascript">
 		function enviar() {

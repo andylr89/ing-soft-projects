@@ -72,6 +72,7 @@ public class EmpleadoDAO {
                 EmpleadoVO Empleado = new EmpleadoVO();
                 Empleado.setDni_empleado(Integer.parseInt(res.getString("DNI")));
                 Empleado.setContrasena_empleado(res.getString("password"));
+                Empleado.setCorreo_empleado(res.getString("correo_empleado"));
                 Empleado.setNombre_empleado(res.getString("nombre_usu"));
                 Empleado.setApellido_empleado(res.getString("apellido_usu"));
                 Empleado.setFecha_nacimiento_empleado(res.getString("fechanacimiento_usu"));
