@@ -63,7 +63,7 @@ public class EmpleadoDAO {
         Connect link = new Connect();
         
         try {
-            PreparedStatement consulta = link.getConnection().prepareStatement("SELECT * FROM empleado where dni = ? ");
+            PreparedStatement consulta = link.getConnection().prepareStatement("SELECT * FROM empleado where DNI = ? ");
             
             consulta.setString(1, empleado);
             ResultSet res = consulta.executeQuery();
@@ -73,16 +73,17 @@ public class EmpleadoDAO {
                 Empleado.setDni_empleado(Integer.parseInt(res.getString("DNI")));
                 Empleado.setContrasena_empleado(res.getString("password"));
                 Empleado.setCorreo_empleado(res.getString("correo_empleado"));
-                Empleado.setNombre_empleado(res.getString("nombre_usu"));
-                Empleado.setApellido_empleado(res.getString("apellido_usu"));
-                Empleado.setFecha_nacimiento_empleado(res.getString("fechanacimiento_usu"));
-                Empleado.setHabilidades_empleado(res.getString("habilidad_usu"));
+                Empleado.setNombre_empleado(res.getString("nombre_empleado"));
+                Empleado.setApellido_empleado(res.getString("apellido_empleado"));
+                Empleado.setFecha_nacimiento_empleado(res.getString("fechanacimiento_empleado"));
+                Empleado.setCategoria_empleado(res.getString("categoria_empleado"));
+                Empleado.setHabilidades_empleado(res.getString("habilidad_empleado"));
                 Empleado.setCiudad_empleado(res.getString("ciudad"));
-                Empleado.setDireccion_empleado(res.getString("direccion_usu"));
-                Empleado.setContacto_empleado(Integer.parseInt(res.getString("telefono_usu")));
-                Empleado.setDisponibilidad_empleado(res.getString("disponibilidad_usu"));
+                Empleado.setDireccion_empleado(res.getString("direccion_empleado"));
+                Empleado.setContacto_empleado(Integer.parseInt(res.getString("telefono_empleado")));
+                Empleado.setDisponibilidad_empleado(res.getString("disponibilidad_empleado"));
                 Empleado.setHoja_vida(res.getString("hoja_vida"));
-                Empleado.setCalificacion_empleado(Integer.parseInt(res.getString("calificacion_usu")));
+                Empleado.setCalificacion_empleado(Integer.parseInt(res.getString("calificacion_empleado")));
                 
                 listaempleado.add(Empleado);
                 

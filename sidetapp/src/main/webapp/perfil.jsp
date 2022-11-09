@@ -1,24 +1,33 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style6.css">
-<link rel="stylesheet" href="css/imagen.css">
+<link rel="stylesheet" href="css/newStyles4.css">
+<!--Font Awesome-->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+	integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Boxicons-->
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
+	rel='stylesheet'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="shortcut icon" href="img/Recurso 2.PNG" type="image/x-icon" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="shortcut icon" href="img/Recurso2.png" type="image/x-icon" />
 <link
 	href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
 	rel="stylesheet">
 <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
 	rel='stylesheet'>
 <title>Mi Perfil</title>
-</head>
 <body>
+
+
+
 	<div class="page-content page-container" id="page-content">
 		<div class="padding">
 			<div class="row container d-flex justify-content-center">
@@ -36,8 +45,6 @@
 												</button>
 												<input type="file" name="avatar" id="avatarInput">
 											</div>
-											<img src="https://i.ibb.co/0Jmshvb/no-image.png"
-												class="image-preview" alt="preview image">
 										</div>
 									</div>
 									<h6 class="f-w-600">Nombre</h6>
@@ -87,9 +94,7 @@
 			</div>
 		</div>
 	</div>
-	</div>
-	</div>
-	<script src="js/main.js"></script>
+
 	<script>
       const avatarInput = document.querySelector('#avatarInput');
       const avatarName = document.querySelector('.input-file__name');

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,8 +34,8 @@
 		<div class="sidebar">
 			<ul>
 				<input type="checkbox" id="check">
-				<label for="check"> <i class="fa-regular fa-circle-xmark"
-					id="cancel"></i>
+				<label for="check">
+				<i class="fa-regular fa-circle-xmark" id="cancel"></i>
 				</label>
 				<li><img src="/img/Recurso2.png" alt="Logo sidetapp" id="logo"></li>
 				<li><a href="index.html">Inicio</a></li>
@@ -43,6 +43,7 @@
 				<li><a href="empleado.jsp">Registrar Empleado</a></li>
 				<li><a href="empleador.jsp">Registrar Empleador</a></li>
 				<li><a href="oferta.jsp">Buscar Oferta</a></li>
+				<li><a href="perfil.jsp">Mi Perfil</a></li>
 			</ul>
 		</div>
 	</div>

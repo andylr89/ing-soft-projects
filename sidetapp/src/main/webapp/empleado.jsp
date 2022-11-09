@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,11 +44,13 @@
 				<li><a href="empleado.jsp">Registrar Empleado</a></li>
 				<li><a href="empleador.jsp">Registrar Empleador</a></li>
 				<li><a href="oferta.jsp">Buscar Oferta</a></li>
+				<li><a href="perfil.jsp">Mi Perfil</a></li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="container-form sign-up">
+<!-- 		<form class="formulario" action="http://localhost:8080/registrarempleado" method = "post"> -->
 		<form class="formulario">
 			<h2 class="create-account">Registrarse como Empleado</h2>
 			<div class="dni">
@@ -110,102 +112,141 @@
 					id="passw">
 			</div>
 			<div>
-				<input type="submit" value="Enviar" onclick="enviar()">
+				<button type="button" onclick="enviar()">Enviar</button>
+<!-- 				<input type="button" value="Enviar" onclick="enviar()"> -->
 			</div>
 		</form>
 	</div>
 
-	<script type="text/javascript">
+	<script type="text/javascript" async="async">
+		console.log("Test");
 		function enviar() {
-
-			var x = document.getElementById("idNumber").value;
-			var request = new XMLHttpRequest();
-			var match = false;
-			request.open('GET', 'http://localhost:8080/consultarempleado',
-					false);
-			request.send(null);
-			var empleado = null;
-			if (request.status == 200)
-				empleado = JSON.parse(request.responseText);
-			console.log(JSON.parse(request.responseText));
-			for (i = 0; i < empleado.lenght; i++) {
-				console.log(empleado[i].DNI);
-				if (empleado[i].DNI === x) {
-					console.log(empleado[i].DNI + " " + x);
-					match = true;
-					break;
-				}
-
+			var id = document.getElementById("idNumber").value;
+			if(id === " "){
+				alert("Debe diligenciar el número de identificación");
 			}
-			;
-			console.log(match);
-			if (!match) {
-				var formData = new FormData();
-				formData.append("dni_empleado", document
-						.getElementById("idNumber").value);
-				formData.append("contrasena_empleado", document
-						.getElementById("passw").value);
-				formData.append("correo_empleado", document
-						.getElementById("email").value);
-				formData.append("nombre_empleado", document
-						.getElementById("nombre").value);
-				formData.append("apellido_empleado", document
-						.getElementById("apellido").value);
-				formData.append("fecha_nacimiento_empleado", document
-						.getElementById("fechaNacimiento").value);
-				formData.append("categoria_empleado", document
-						.getElementById("areaConoci").value);
-				formData.append("habilidades_empleado", document
-						.getElementById("habilidad").value);
-				formData.append("ciudad_empleado", document
-						.getElementById("ciudad").value);
-				formData.append("direccion_empleado", document
-						.getElementById("direccion").value);
-				formData.append("contacto_empleado", document
-						.getElementById("telefono").value);
-				formData.append("disponibilidad_empleado", document
-						.getElementById("disponibilidad").value);
-				formData.append("hoja_vida", document
-						.getElementById("hojaVida").value);
-				formData.append("calificacion_empleado", document
-						.getElementById("calificacion").value);
-				var nreq = new XMLHttpRequest();
-				console.log(formData);
-				nreq.open("POST", "http://localhost:8080/registrarempleado")
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+// 			console.log("function Starts");
+// 			var x = document.getElementById("idNumber").value;
+// 			var request = new XMLHttpRequest();
+// 			var match = false;
+// 			request.open("GET", "http://localhost:8080/consultarempleado");
+// 			request.send(null);
+// 			var empleado = null;
+// 			if (request.readyState === 4) {
+// 				if (request.status === 200) {
+// 					empleado = JSON.parse(request.responseText);
+// 					console.log(empleado);
+// 					for (i = 0; i < empleado.lenght; i++) {
+// 						console.log(empleado[i].DNI);
+// 						if (empleado[i].DNI === x) {
+// 							console.log(empleado[i].DNI + " " + x);
+// 							match = true;
+// 							break;
+// 						}
+// 					}
+// 				}
+// 			}
+// 			console.log(match);
+// 			if (match===false) {
+// 				var formData = new FormData();
+// 				console.log(formData);
+// 				formData.append("dni_empleado", document
+// 						.getElementById("idNumber").value);
+// 				formData.append("contrasena_empleado", document
+// 						.getElementById("passw").value);
+// 				formData.append("correo_empleado", document
+// 						.getElementById("email").value);
+// 				formData.append("nombre_empleado", document
+// 						.getElementById("nombre").value);
+// 				formData.append("apellido_empleado", document
+// 						.getElementById("apellido").value);
+// 				formData.append("fecha_nacimiento_empleado", document
+// 						.getElementById("fechaNacimiento").value);
+// 				formData.append("categoria_empleado", document
+// 						.getElementById("areaConoci").value);
+// 				formData.append("habilidades_empleado", document
+// 						.getElementById("habilidad").value);
+// 				formData.append("ciudad_empleado", document
+// 						.getElementById("ciudad").value);
+// 				formData.append("direccion_empleado", document
+// 						.getElementById("direccion").value);
+// 				formData.append("contacto_empleado", document
+// 						.getElementById("telefono").value);
+// 				formData.append("disponibilidad_empleado", document
+// 						.getElementById("disponibilidad").value);
+// 				formData.append("hoja_vida", document
+// 						.getElementById("hojaVida").value);
+// 				formData.append("calificacion_empleado", document
+// 						.getElementById("calificacion").value);
+// 				var nreq = new XMLHttpRequest();
+// 				console.log(formData);
+// 				nreq.open("POST", "http://localhost:8080/registrarempleado", true);
+// 				nreq.send();
 
-				document.getElementById("idNumber").value = "";
-				document.getElementById("passw").value = "";
-				document.getElementById("email").value = "";
-				document.getElementById("nombre").value = "";
-				document.getElementById("apellido").value = "";
-				document.getElementById("fechaNacimiento").value = "";
-				document.getElementById("areaConoci").value = "";
-				document.getElementById("habilidad").value = "";
-				document.getElementById("ciudad").value = "";
-				document.getElementById("direccion").value = "";
-				document.getElementById("telefono").value = "";
-				document.getElementById("disponibilidad").value = "";
-				document.getElementById("hojaVida").value = "";
-				document.getElementById("calificacion").value = "";
-				nreq.send(formData);
+// 				window.location.href = "http://localhost:8080/empleado.jsp";
+// 				document.getElementById("idNumber").value = "";
+// 				document.getElementById("passw").value = "";
+// 				document.getElementById("email").value = "";
+// 				document.getElementById("nombre").value = "";
+// 				document.getElementById("apellido").value = "";
+// 				document.getElementById("fechaNacimiento").value = "";
+// 				document.getElementById("areaConoci").value = "";
+// 				document.getElementById("habilidad").value = "";
+// 				document.getElementById("ciudad").value = "";
+// 				document.getElementById("direccion").value = "";
+// 				document.getElementById("telefono").value = "";
+// 				document.getElementById("disponibilidad").value = "";
+// 				document.getElementById("hojaVida").value = "";
+// 				document.getElementById("calificacion").value = "";
 
-			} else {
-
-				document.getElementById("idNumber").value = "";
-				document.getElementById("passw").value = "";
-				document.getElementById("email").value = "";
-				document.getElementById("nombre").value = "";
-				document.getElementById("apellido").value = "";
-				document.getElementById("fechaNacimiento").value = "";
-				document.getElementById("areaConoci").value = "";
-				document.getElementById("habilidad").value = "";
-				document.getElementById("ciudad").value = "";
-				document.getElementById("direccion").value = "";
-				document.getElementById("telefono").value = "";
-				document.getElementById("disponibilidad").value = "";
-				document.getElementById("hojaVida").value = "";
-				document.getElementById("calificacion").value = "";
-			}
+// 			} else {
+// 				alert("Faltan datos");
+// 				window.location.href = "http://localhost:8080/empleado.jsp";
+// 				document.getElementById("idNumber").value = "";
+// 				document.getElementById("passw").value = "";
+// 				document.getElementById("email").value = "";
+// 				document.getElementById("nombre").value = "";
+// 				document.getElementById("apellido").value = "";
+// 				document.getElementById("fechaNacimiento").value = "";
+// 				document.getElementById("areaConoci").value = "";
+// 				document.getElementById("habilidad").value = "";
+// 				document.getElementById("ciudad").value = "";
+// 				document.getElementById("direccion").value = "";
+// 				document.getElementById("telefono").value = "";
+// 				document.getElementById("disponibilidad").value = "";
+// 				document.getElementById("hojaVida").value = "";
+// 				document.getElementById("calificacion").value = "";
+// 			}
 		}
 	</script>
 </body>

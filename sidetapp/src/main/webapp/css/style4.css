@@ -380,7 +380,7 @@ ul {
     color: #000;
     left: 25%;
 }
-.formulario input[type="button"] {
+/*.formulario input[type="button"] {
     width: 60%;
     margin: auto;
     border: solid thin white;
@@ -394,7 +394,7 @@ ul {
     color: #222;
 }
 
-.formulario input[type="submit"] {
+.formulario input[type="button"] {
     position: relative;
     top: -565px;
     width: 35%;
@@ -409,22 +409,23 @@ ul {
     cursor: pointer;
     color: #222;
     left: 2%;
-}
+}*/
 
-.sign-in {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.sign-in.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.sign-up.active {
-    opacity: 0;
-    visibility: hidden;
+.formulario button {
+	position: relative;
+    top: -565px;
+    width: 35%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+    left: 2%;
 }
 
 .alert-box {
