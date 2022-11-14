@@ -1,44 +1,52 @@
- <form action="/form-handler.php">
-  <fieldset>
-    <legend>OFERTA:</legend>
-     ID:
-    <div>
-    <input type="text" name="firstname"placeholder="ID"id="ID">
-   </div>
-    Desripción de la oferta:
-    <div>
-    <textarea name="texto" rows="4" cols="40" placeholder="Escriba algo"></textarea>
-    </div>
-    Horario oferta:
-    <div>
-     <input type="time" name="hora" placeholder="Horario Oferta"id="Horario Oferta">
- </div>
-    Sueldo Oferta:
-   <div> 
-    <input type"text" name="firstname" placeholder="Sueldo Oferta"id="Sueldo Oferta">
-   </div>
-     Id beneficios oferta :
-   <div>
-   <input type="text" name="firstname"placeholder="Id beneficios Oferta"id="Id beneficios Oferta">
- </div>
-    Id requesitos oferta
-    <div>
-    <input type="text" name="firstname" placeholder=" Id requesitos oferta"id="Id requesitos oferta">
-   </div>
-
-    Id funciones oferta :
-   <div>
-    <input type="text" name="firstname" placeholder="Id funciones Oferta" id="id funciones Oferta">
-   </div>
-    Cargo Oferta :
-   <div>
-    <input type="text" name="firstname"placeholder="Cargo Oferta"id="Cargo Oferta">
-   </div>
-    <input type="submit" value="Enviar">
-  </fieldset>
-   <style>
-  body {
-    background-image:url(https://diariomayor.umayor.cl/images/TALLER-CIBERSEGURIDAD-VULNERABILIDADES-U-MAYOR-REF.jpg)
-  }
-</style>
-</form>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style8.css">
+    <link rel="stylesheet" href="css/imagen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/Recurso 2.PNG" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>SidetApp Login</title>
+</head>
+<body>
+<div class="container-form sign-up">
+    <form class="formulario">
+       <h2 class="create-account">
+           OFERTA
+       </h2>
+        <h4 class="id">
+            ID
+        </h4>
+        <div class="titulo">
+            <input type="text" name="firstname" placeholder="Titulo" id="Sueldo Oferta">
+        </div>
+        <div class="horario">
+            <input type="text" name="firstname" placeholder="Horario" id="horario">
+        </div>
+        <div class="sueldo">
+            <input type="text" name="firstname" placeholder="Salario"id="Sueldo Oferta">
+        </div>
+        <div class="beneficios">
+            <input type="text" name="firstname"placeholder="Beneficios Oferta"id="Id beneficios Oferta">
+        </div>
+        <div class="requisitos">
+            <input type="text" name="firstname" placeholder="Requisitos oferta"id="Id requesitos oferta">
+        </div>
+        <div class="cargo">
+            <input type="text" name="firstname"placeholder="Cargo Oferta"id="Cargo Oferta">
+        </div>
+        <div class="descripcion">
+            <textarea name="texto" rows="4" cols="40" placeholder="Desripción de la oferta"></textarea>
+        </div>
+        <div>
+        <input type="submit" value="Publicar">
+        </div>
+    </form>
+</div>
+</body>
+</html>
